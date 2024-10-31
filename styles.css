@@ -1,0 +1,74 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1a1a1a; /* Latar belakang hitam pekat */
+  color: #c9c9c9; /* Warna teks abu-abu muda */
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(135deg, #0f0f0f 0%, #1e1e1e 100%);
+  padding: 30px;
+  color: #39b54a; /* Warna hijau futuristik */
+  border-bottom: 1px solid #39b54a; /* Garis bawah hijau */
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+h2 {
+  margin: 20px 0;
+  color: #39b54a;
+}
+
+.about,
+.social-links {
+  margin: 20px auto;
+  padding: 25px;
+  background: #121212; /* Latar belakang kotak konten */
+  border: 1px solid #39b54a; /* Garis luar hijau */
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(57, 255, 20, 0.3); /* Efek cahaya hijau */
+  max-width: 800px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #39b54a;
+  font-size: 20px;
+  margin: 10px;
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+ul li a:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  background: #1a1a1a;
+  color: #39b54a;
+  border-top: 1px solid #39b54a;
+}
