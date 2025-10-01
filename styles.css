@@ -216,3 +216,26 @@ body{
 @media (max-width:480px){
   .avatar{ width:100px; height:100px; border-radius:20px; }
 }
+
+/* Logo kotak gelap untuk Project Feed */
+.proj-logo-dark{
+  display:grid; place-items:center;
+  width:40px; height:40px; border-radius:8px;
+  background:#0c0c0c; border:1px solid #222;
+}
+
+/* Badge NEW kecil */
+.badge-new{
+  display:inline-block;
+  margin-left:6px;
+  font-size:12px;
+  font-weight:800;
+  padding:2px 8px;
+  border-radius:999px;
+  letter-spacing:.3px;
+  color:#0b0b0b;
+  background: linear-gradient(180deg, var(--brand-2), var(--brand));
+  border: 1px solid rgba(255,255,255,.12);
+  vertical-align: middle;
+}
+
