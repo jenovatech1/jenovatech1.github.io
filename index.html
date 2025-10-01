@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jenova — Portfolio</title>
 
+    <!-- Meta: SEO + Social preview -->
+    <meta name="description" content="Jenova — Builder @ Jenovatech. Shipping secure, offline-first tools like SeedSafe and Project Feed (DeFi dashboards).">
+    <meta property="og:title" content="Jenova — Portfolio">
+    <meta property="og:description" content="Secure, offline-first tools. SeedSafe & Project Feed.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 
@@ -19,7 +27,7 @@
     <div class="bg-grid" aria-hidden="true"></div>
 
     <header class="site-header container">
-      <img src="logo.png" alt="Jenova logo" class="avatar" />
+      <img src="logo.png" alt="Jenova logo" class="avatar" loading="lazy" decoding="async" />
       <h1 class="title">Jenova</h1>
       <p class="tagline">Builder @ Jenovatech — shipping secure, offline-first tools.</p>
 
@@ -27,16 +35,20 @@
         <!-- Ganti href sesuai path SeedSafe kamu -->
         <a class="btn btn-primary btn-gplay" href="seedsafe-site/index.html">Visit SeedSafe</a>
         <a class="btn btn-ghost" href="seedsafe-site/recovery.html">Offline Recovery Tool</a>
+        <!-- CTA baru ke Project Feed -->
+        <!-- Ganti href ke path app feed kamu -->
+        <a class="btn btn-outline" href="project-feed/index.html">Open Project Feed</a>
       </div>
     </header>
 
     <main class="container">
       <!-- Featured project -->
       <section class="featured">
+        <!-- SeedSafe card (existing) -->
         <div class="card card-glow">
           <div class="card-body">
             <div class="proj-head">
-              <img src="https://jenovatech1.github.io/seedsafe-site/assets/images/logo.png" alt="SeedSafe" class="proj-logo" />
+              <img src="https://jenovatech1.github.io/seedsafe-site/assets/images/logo.png" alt="SeedSafe" class="proj-logo" loading="lazy" decoding="async" />
               <div>
                 <h2 class="proj-title">SeedSafe</h2>
                 <p class="proj-sub">Offline Seed Phrase Manager • Open-source</p>
@@ -59,6 +71,44 @@
               <a class="btn btn-primary btn-gplay" href="seedsafe-site/index.html">Open Landing</a>
               <a class="btn btn-outline" href="https://github.com/jenovatech1/seedsafe-app" target="_blank" rel="noopener">GitHub App</a>
               <a class="btn btn-outline" href="https://github.com/jenovatech1/seedsafe-site" target="_blank" rel="noopener">GitHub Site</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEW: Project Feed card -->
+        <div class="card card-glow">
+          <div class="card-body">
+            <div class="proj-head">
+              <!-- Simple inline SVG logo biar ringan -->
+              <div class="proj-logo proj-logo-dark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <rect x="3" y="3" width="18" height="18" rx="5" fill="#1a2230"></rect>
+                  <path d="M7 16l5-8 5 8" stroke="#43d68a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <div>
+                <h2 class="proj-title">Project Feed <span class="badge-new">NEW</span></h2>
+                <p class="proj-sub">DeFi dashboards — TVL, Fees/Revenue, Prices (DeFiLlama + CoinGecko)</p>
+              </div>
+            </div>
+
+            <p class="proj-desc">
+              Mobile-first feed untuk protokol DeFi: filter per chain, sort (Δ7D/TVL/Fees/Revenue/ΔPrice), watchlist, dan sheet detail dengan grafik TVL 30D, market data, serta link GitHub/CoinGecko/DeFiLlama.
+            </p>
+
+            <div class="pill-row">
+              <span class="pill">DeFiLlama API</span>
+              <span class="pill">CoinGecko</span>
+              <span class="pill">Fees/Revenue</span>
+              <span class="pill">TVL Chart</span>
+              <span class="pill">Watchlist</span>
+            </div>
+
+            <div class="proj-actions">
+              <!-- Ganti href ke path app feed kamu -->
+              <a class="btn btn-primary" href="project-feed/index.html">Open Project Feed</a>
+              <a class="btn btn-outline" href="https://defillama.com" target="_blank" rel="noopener">DeFiLlama</a>
+              <a class="btn btn-outline" href="https://www.coingecko.com" target="_blank" rel="noopener">CoinGecko</a>
             </div>
           </div>
         </div>
